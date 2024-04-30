@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ت Recognition </title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<style>
+body{ background: linear-gradient(45deg, white, #D1E4C4, white); 
+height:230vh; }
+
+.buttons{width: 200px;
+height: 70px;
+ text-align: Center;
+font-size: 60px; 
+ cursor:pointer;
+margin-top: 120px;
+border-radius: 7px;
+box-shadow: 2px 2px 3px grey;
+border:none;
+background-color: #D1E4C4;
+}
+.buttons:hover{  background-color: #F1F7ED;}
+.buttons:active{  background-color: #D1E4C4;}
+
+
+.tooltips{
+ position:relative;
+ display:block;
+ text-align:center;
+ font-size:70px;
+ font-weight:bold;
+ cursor:pointer;
+ 
+}
+.tooltips .tooltipstext{
+ visibility:hidden;
+ position:absolute;
+ z-index:1;
+ left:100px;
+ width:1100px;
+ top:125%;
+ background: #F1F7ED;
+ font-size:40px;
+ font-weight:normal;
+ padding: 10px;
+ border-radius: 6px;
+ box-shadow: 5px 0px 7px black;
+ text-align: left;
+ 
+}
+.tooltips:hover .tooltipstext{  visibility: visible;}
+
+</style>
+</head>
+<body>
+
+
+<h1 class="tooltips"> ت </h1> 
+
+
+<div style=" display: grid; grid-template-columns: 900px; justify-content: center; margin-top: 20px;">
+
+
+<div style="text-align: left; font-size: 60px; background-color: #F1F7ED; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;">
+
+<div style="display:grid; grid-template-columns: 1fr 1fr;">
+
+<div style="width:400px; height: 250px; box-shadow: 2px 2px 3px grey;  margin-top: 30px; "><img src="timsah.jpg" style="width:400px; height: 250px; "></div>
+<button class="buttons" onmousedown="sound1.play()"> تمساح </button>
+
+
+<div style="width:400px; height: 250px; box-shadow: 2px 2px 3px grey;  margin-top: 30px;"><img src="tisun.jpg" style="width:400px; height: 250px; "></div>
+<button class="buttons" onmousedown="sound2.play()"> تيس </button>
+
+
+<div style="width:400px; height: 250px; box-shadow: 2px 2px 3px grey;  margin-top: 30px;"><img src="tuna.jpg" style="width:400px; height: 250px; "></div>
+<button class="buttons" onmousedown="sound3.play()"> تونه </button>
+
+
+<div style="width:400px; height: 250px; box-shadow: 2px 2px 3px grey;  margin-top: 30px;"><img src="tanin.jpg" style="width:400px; height: 250px; "></div>
+<button class="buttons" onmousedown="sound4.play()"> تنين  </button>
+
+
+
+</div>
+
+
+</div>
+</div>
+
+
+<script>
+  var sound1 = new Audio();
+  sound1.src = "timsah.mp3";
+
+  var sound2 = new Audio();
+  sound2.src = "tisun.mp3";
+
+  var sound3 = new Audio();
+  sound3.src = "tuna.mp3";
+
+  var sound4 = new Audio();
+  sound4.src = "tanin.mp3";
+
+
+
+
+
+</script>
+</body>
+</html>
